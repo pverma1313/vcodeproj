@@ -8,7 +8,7 @@ describe("Elements",function(){
         await browser.maximizeWindow()
         
         await expect(browser).toHaveUrlContaining('amazon');
-        
+        //add url
         const login=await $('#nav-link-accountList-nav-line-1')
         await login.click();
         await browser.pause(2000);
